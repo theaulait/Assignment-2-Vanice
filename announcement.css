@@ -1,0 +1,172 @@
+@import 'https://fonts.googleapis.com/css?family=Armata';
+
+*{
+	box-sizing: border-box;
+
+}
+body{
+	margin-left: 150px;
+	margin-right: 150px;
+	color: white;
+	font-family: 'Poiret One', cursive;
+	background-image: url(woman_in_gold.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#background {
+	background: url(woman_in_gold.jpg) no-repeat;
+	background-size: cover; 
+	-ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;   
+}
+
+
+header{
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	font-size: 75px;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: blink;
+	background-color: rgba(0 ,0 ,0, 0.5);
+	font-family: "Armata";
+	color: rgb(212, 175, 55);
+	border: 5px solid white;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	-webkit-animation: fadein 5s; 
+    -moz-animation: fadein 5s; 
+    -ms-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; } 
+}
+
+
+h2{
+	text-align: center;
+}
+
+ footer{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.button{
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	width: 150px;
+	height: 70px;
+	background-color: rgba(0,0,0, 0.5);
+	border-style: 1px solid white;
+	margin: 15px;
+	color: white;
+	padding: 8px;
+	border-radius: 10%;
+	outline: none;
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border-style: none;
+    outline: none;
+}
+
+.tabGroup{
+	width: 100%;
+	height: 550px;
+}
+
+
+.tabGroup > input[type="radio"]{
+	text-align: center;
+	position: absolute;
+	top: -100px;
+}
+
+.tabGroup > input[type="radio"] + label {
+	width: 24.5%;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid white;
+	border-bottom: 0;
+	padding: 20px 98px 20px 98px;
+	margin: 0;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+}
+
+.tabGroup > input[type="radio"]:focus + label{
+	border: 1px solid white;
+}
+
+.tabGroup > input[type="radio"]:checked + label{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid white;
+	margin-bottom: -1px;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.tabGroup > div{
+	padding: 25px;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 50%;
+	overflow: auto;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.tab1:checked ~ .tab1, .tab2:checked ~ .tab2, .tab3:checked ~ .tab3, .tab4:checked ~ .tab4 {
+	display: block;
+}
+
+table{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+th, td{
+	padding: 10px;
+}
+
+.pic{
+	width: 65px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+
+
